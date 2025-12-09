@@ -1,0 +1,82 @@
+import { Language } from '../types';
+
+export const translations = {
+  en: {
+    appTitle: "Sketchify",
+    appTitleSuffix: "Tutorials",
+    poweredBy: "Powered by Gemini 3 Pro",
+    heroTitle: "Turn Videos into",
+    heroTitleHighlight: "Hand-Drawn",
+    heroTitleSuffix: "Guides",
+    heroSubtitle: "Upload a short video clip. We'll extract key moments and use the Nano Banana Pro AI to sketch a professional step-by-step tutorial for you.",
+    uploadReady: "Click to upload a video",
+    uploadConnect: "Connect API Key to Start",
+    uploadHint: "MP4, MOV, WebM up to 50MB recommended",
+    stepsTitle: "Tutorial Steps",
+    statusExtracting: "Analyzing video frames...",
+    statusGenerating: "AI Artist is sketching...",
+    statusComplete: "Tutorial generation complete!",
+    startOver: "Start Over",
+    step: "Step",
+    download: "Download",
+    print: "Print Tutorial Sheet",
+    printAlert: "Printing support coming soon! For now, please download individual images.",
+    saveHint: "Make sure to save your tutorial images!",
+    statusFailed: "Generation Failed",
+    statusProcessing: "Sketching...",
+    statusWaiting: "Waiting...",
+    errorVideo: "Please upload a valid video file.",
+    errorExtract: "Failed to extract frames from video.",
+    apiKey: {
+      title: "Access Required",
+      description: "To use the advanced",
+      modelName: "Nano Banana Pro",
+      descriptionSuffix: "(Gemini 3 Pro) model for high-quality sketch generation, you need to connect a paid API key.",
+      button: "Select API Key",
+      errorEnv: "AI Studio environment not detected.",
+      errorFail: "Key selection failed or expired. Please try again.",
+      errorGeneric: "An error occurred while selecting the key.",
+      billing: "View Billing Documentation"
+    }
+  },
+  zh: {
+    appTitle: "Sketchify",
+    appTitleSuffix: "手绘教程",
+    poweredBy: "由 Gemini 3 Pro 驱动",
+    heroTitle: "将视频转化为",
+    heroTitleHighlight: "手绘",
+    heroTitleSuffix: "指南",
+    heroSubtitle: "上传简短的视频片段。我们将提取关键时刻，并使用 Nano Banana Pro AI 为您绘制专业的步骤教程。",
+    uploadReady: "点击上传视频",
+    uploadConnect: "连接 API 密钥以开始",
+    uploadHint: "推荐使用 MP4, MOV, WebM 格式，最大 50MB",
+    stepsTitle: "教程步骤",
+    statusExtracting: "正在分析视频帧...",
+    statusGenerating: "AI 艺术家正在绘图...",
+    statusComplete: "教程生成完成！",
+    startOver: "重新开始",
+    step: "步骤",
+    download: "下载",
+    print: "打印教程页",
+    printAlert: "打印功能即将推出！目前请单独下载图片。",
+    saveHint: "请务必保存您的教程图片！",
+    statusFailed: "生成失败",
+    statusProcessing: "绘图中...",
+    statusWaiting: "等待中...",
+    errorVideo: "请上传有效的视频文件。",
+    errorExtract: "无法从视频中提取帧。",
+    apiKey: {
+      title: "需要访问权限",
+      description: "要使用高级",
+      modelName: "Nano Banana Pro",
+      descriptionSuffix: "(Gemini 3 Pro) 模型生成高质量草图，您需要连接付费 API 密钥。",
+      button: "选择 API 密钥",
+      errorEnv: "未检测到 AI Studio 环境。",
+      errorFail: "密钥选择失败或已过期。请重试。",
+      errorGeneric: "选择密钥时发生错误。",
+      billing: "查看计费文档"
+    }
+  }
+};
+
+export const getTranslation = (lang: Language) => translations[lang];

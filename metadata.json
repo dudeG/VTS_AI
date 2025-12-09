@@ -1,0 +1,5 @@
+{
+  "name": "Sketchify Tutorial Maker",
+  "description": "Convert video clips into beautiful hand-drawn step-by-step tutorials using the Nano Banana Pro (Gemini 3 Pro Image) model.",
+  "requestFramePermissions": []
+}
